@@ -1,6 +1,6 @@
 baseURL = "https://hayabusa1601.github.io/"
 languageCode = "zh-cn"
-title = "はやぶろぐ (仮)"
+title = "ハヤブサの巣窟"
 theme = "github-style"
 googleAnalytics = "UA-123456-789"
 pygmentsCodeFences = true
@@ -12,7 +12,7 @@ pygmentsUseClasses = true
   github = "Hayabusa1601"
   twitter = "Hayabusa1601"
   email = "1601hayabusa@gmail.com"
-  url = "https://hayabusa1601.com"
+  url = "https://hayabusa1601.net"
   keywords = "blog, google analytics"
   reddit = "Hayabusa1601"
   rss = true
