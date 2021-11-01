@@ -27,8 +27,8 @@ pygmentsUseClasses = true
   description = "九州のお臍の高専生の雑記"
   twittertitle = "ハヤブサの巣窟"
   title = "巣窟"
-  twitterthumbnail = "images/kari.png"
-  
+  twitterthumbnail = "/images/kari.png"
+
 
 
 [frontmatter]
