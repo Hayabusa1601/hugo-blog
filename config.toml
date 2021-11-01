@@ -19,6 +19,7 @@ pygmentsUseClasses = true
   lastmod = true
   favicon = "images/favicon.png"
   location = "Japan"
+  header_image   = "images/mycon.jpg"
 
   twitterusername = "ハヤブサ"
   twitterid = "@Hayabusa1601"
