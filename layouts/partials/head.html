@@ -20,22 +20,21 @@
     <!-- Extended head section-->
     {{ partial "extended_head.html" . }}
 
-    <!-- OGP -->
 
-    <meta property="og:url" content="{{ .Permalink | absURL }}"/>
-    <meta property="og:site_name" content="{{ .Site.Title }}"/>
-    {{- if .IsHome }}
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ .Site.Title }}" />
-    <meta property="og:description" content="{{ .Site.Params.Description }}"/>
-    <meta property="og:image" content="{{ $.Site.Params.avatar }}"/>
-    {{- else }}
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ .Title }}" />
-    <meta property="og:description" content="{{ .Params.Description }}"/>
-    {{ if isset .Params "date" }}
-    <meta property="article:published_time" content="{{ time .Date }}" />
-    {{ end }}
-    {{- end }}
+    <!-- twitter cardの種類を指定-->
+    <meta name="twitter.card"   content="summary_large_image">
+
+    <!-- OGP-->
+    <meta property="og.type"        content="article">
+    <meta property="og.title"       content="{{ .Params.title}}">
+    <meta property="og.description" content="{{ .Params.summary }}">
+    <meta property="og.image"       content="{{ .Site.BaseURL }}{{.Site.Params.Twitterthumbnail}}">
+
+
+    <!--twitterユーザー名-->
+    <meta property="twitter:site"   content=" {{.Site.Params.Twitterusername }}">
+    <meta property="twitter:site:id"   content=" {{.Site.Params.Twitterid }}">
+    <meta property="twitter:creator"   content=" {{.Site.Params.Creator }}">
+    <meta property="twitter.creator:id"   content=" {{.Site.Params.Creatorid }}">
 
 </head>

@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [params]
   author = "ハヤブサ"
-  description = "九州のお臍の高専生です。"
+  description = "九州のお臍の高専生の雑記"
   github = "Hayabusa1601"
   twitter = "Hayabusa1601"
   email = "1601hayabusa@gmail.com"
@@ -20,6 +20,15 @@ pygmentsUseClasses = true
   favicon = "images/favicon.png"
   location = "Japan"
 
+  twitterusername = "ハヤブサ"
+  twitterid = "@Hayabusa1601"
+  creator = "Hayabusa"
+  creatorid = "@Hayabusa1601"
+  description = "九州のお臍の高専生の雑記"
+  twittertitle = "ハヤブサの巣窟"
+  title = "巣窟"
+  twitterthumbnail = "images/kari.png"
+  
 
 
 [frontmatter]
