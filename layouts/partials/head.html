@@ -19,4 +19,23 @@
 
     <!-- Extended head section-->
     {{ partial "extended_head.html" . }}
+
+    <!-- OGP -->
+
+    <meta property="og:url" content="{{ .Permalink | absURL }}"/>
+    <meta property="og:site_name" content="{{ .Site.Title }}"/>
+    {{- if .IsHome }}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.Description }}"/>
+    <meta property="og:image" content="{{ $.Site.Params.avatar }}"/>
+    {{- else }}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:description" content="{{ .Params.Description }}"/>
+    {{ if isset .Params "date" }}
+    <meta property="article:published_time" content="{{ time .Date }}" />
+    {{ end }}
+    {{- end }}
+
 </head>
