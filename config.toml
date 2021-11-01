@@ -22,14 +22,8 @@ pygmentsUseClasses = true
   header_image   = "images/mycon.png"
   avator = "/images/avator.png"
 
-  twitterusername = "ハヤブサ"
-  twitterid = "@Hayabusa1601"
-  creator = "Hayabusa"
-  creatorid = "@Hayabusa1601"
-  description = "九州のお臍の高専生の雑記"
-  twittertitle = "ハヤブサの巣窟"
+  images = ["mycon.jpg"]
   title = "ハヤブサの巣窟"
-  twitterthumbnail = "images/mycon.png"
 
 
 [frontmatter]

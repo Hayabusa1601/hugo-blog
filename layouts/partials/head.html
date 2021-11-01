@@ -20,21 +20,6 @@
     <!-- Extended head section-->
     {{ partial "extended_head.html" . }}
 
-
-    <!-- twitter cardの種類を指定-->
-    <meta name="twitter:card"   content="summary">
-
-    <!-- OGP-->
-    <meta property="og:url"         content="{{.Permalink | absURL }}">
-    <meta property="og:title"       content="{{ .Params.title}}">
-    <meta property="og:description" content="{{ .Params.summary }}">
-    <meta property="og:image"       content="{{ $.Site.Params.avator }}">
-
-
-    <!--twitterユーザー名-->
-    <meta property="twitter:site"   content=" {{ .Site.Params.twitterusername }}">
-    <meta property="twitter:site:id"   content=" {{ .Site.Params.twitterid }}">
-    <meta property="twitter:creator"   content=" {{ .Site.Params.creator }}">
-    <meta property="twitter:creator:id"   content=" {{ .Site.Params.creatorid }}">
-
+    {{ template "_internal/opengraph.html" . }}
+    {{- partial "twitter_cards.html" . -}}
 </head>
