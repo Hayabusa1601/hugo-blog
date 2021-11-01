@@ -22,12 +22,13 @@
 
 
     <!-- twitter cardの種類を指定-->
-    <meta name="twitter:card"   content="summary_large_image">
+    <meta name="twitter:card"   content="summary">
 
     <!-- OGP-->
+    <meta property="og:url"         content="{{.Permalink | absURL }}">
     <meta property="og:title"       content="{{ .Params.title}}">
     <meta property="og:description" content="{{ .Params.summary }}">
-    <meta property="og:image"       content="{{ .Site.BaseURL }}{{ .Site.Params.twitterthumbnail }}">
+    <meta property="og:image"       content="{{ $.Site.Params.avator }}">
 
 
     <!--twitterユーザー名-->
