@@ -19,7 +19,7 @@ pygmentsUseClasses = true
   lastmod = true
   favicon = "images/favicon.png"
   location = "Japan"
-  header_image   = "images/mycon.jpg"
+  header_image   = "images/kari.png"
 
   twitterusername = "ハヤブサ"
   twitterid = "@Hayabusa1601"
@@ -27,8 +27,8 @@ pygmentsUseClasses = true
   creatorid = "@Hayabusa1601"
   description = "九州のお臍の高専生の雑記"
   twittertitle = "ハヤブサの巣窟"
-  title = "巣窟"
-  twitterthumbnail = "images/mycon.jpg"
+  title = "ハヤブサの巣窟"
+  twitterthumbnail = "images/kari.png"
 
 
 [frontmatter]

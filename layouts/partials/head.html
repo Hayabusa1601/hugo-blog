@@ -22,18 +22,18 @@
 
 
     <!-- twitter cardの種類を指定-->
-    <meta name="twitter:card"   content="summary">
+    <meta name="twitter:card"   content="summary_large_image">
 
     <!-- OGP-->
     <meta property="og:title"       content="{{ .Params.title}}">
     <meta property="og:description" content="{{ .Params.summary }}">
-    <meta property="og:image"       content="{{ .Site.BaseURL }}{{ .Site.Params.Twitterthumbnail }}">
+    <meta property="og:image"       content="{{ .Site.BaseURL }}{{ .Site.Params.twitterthumbnail }}">
 
 
     <!--twitterユーザー名-->
-    <meta property="twitter:site"   content=" {{ .Site.Params.Twitterusername }}">
-    <meta property="twitter:site:id"   content=" {{ .Site.Params.Twitterid }}">
-    <meta property="twitter:creator"   content=" {{ .Site.Params.Creator }}">
-    <meta property="twitter:creator:id"   content=" {{ .Site.Params.Creatorid }}">
+    <meta property="twitter:site"   content=" {{ .Site.Params.twitterusername }}">
+    <meta property="twitter:site:id"   content=" {{ .Site.Params.twitterid }}">
+    <meta property="twitter:creator"   content=" {{ .Site.Params.creator }}">
+    <meta property="twitter:creator:id"   content=" {{ .Site.Params.creatorid }}">
 
 </head>
