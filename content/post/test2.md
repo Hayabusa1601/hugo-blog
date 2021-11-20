@@ -9,3 +9,5 @@ summary = "Hello worldする"
 +++
 
 Hello world!
+
+{{< figure src="/images/facebook.png" title="Screenshot" class="center" >}}
