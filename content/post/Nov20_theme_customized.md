@@ -68,28 +68,27 @@ Github Actionsの設定をいじくっているときに気づきました、時
 <br />  
 やり方は、font-familyが設定されているCSSを**上書きする**という力技です。  
 もっといいやり方があるんやろうな（遠い目）
-
 <br />  
 
 1.  CSSがどこで読み込まれているか探す。  
     -  layouts/partials/head.htmlにありました。こんな感じのがたくさん  
     `<link rel="stylesheet" href='{{ "css/frameworks.min.css" | absURL }}' />`  
     config.tomlから読み込んでいるテーマもあるそうです、そっちのほうが便利そう。   
- 
-<br />  
+<br />   
+<br />   
 
-2.  head.htmlに以下のように追記する。  
+1.  head.htmlに以下のように追記する。  
     -  `<link rel="stylesheet" href='{{ "css/custom.css" | absURL }}' />`  
     これでcustom.cssが読み込まれるようになりました。  
 <br />  
 <br />  
 
-3.  custom.cssをstatic/cssに作成  
+1.  custom.cssをstatic/cssに作成  
       -  CSSをゴリゴリ書いていきます。  
     font-familyが指定されている場所を探して、それぞれフォントを上書きするコードを書きます。  
     マジで上書きしてるだけ→[static/css/custom.css](https://github.com/Hayabusa1601/hugo-blog/tree/main/static/css/custom.css) 
 
-4.  フォントのファイルをwget
+1.  フォントのファイルをwget
 
 
 参考:  [WebfontをHUGOのブログに適用する](https://kasu-kasu.ga/post/enable-web-font/)
