@@ -70,6 +70,7 @@ Github Actionsの設定をいじくっているときに気づきました、時
 もっといいやり方があるんやろうな（遠い目）
 
 <br />  
+
 1.  CSSがどこで読み込まれているか探す。  
     -  layouts/partials/head.htmlにありました。こんな感じのがたくさん  
     `<link rel="stylesheet" href='{{ "css/frameworks.min.css" | absURL }}' />`  
