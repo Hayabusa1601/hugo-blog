@@ -6,8 +6,9 @@ googleAnalytics = "UA-123456-789"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+
 [params]
-  author = "ハヤブサ"
+  author = "Hayabusa"
   description = "九州のお臍の高専生の雑記"
   github = "Hayabusa1601"
   twitter = "Hayabusa1601"

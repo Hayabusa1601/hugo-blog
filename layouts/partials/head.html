@@ -2,12 +2,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script type="application/javascript" src='{{ "js/theme-mode.js" | absURL }}'></script>
+    <!-- config.tomlで管理されてなくて草-->
     <link rel="stylesheet" href='{{ "css/frameworks.min.css" | absURL }}' />
-    <link rel="stylesheet" href='{{ "css/github.min.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/github-style.css" | absURL }}' />
+    <link rel="stylesheet" href='{{ "css/github.min.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/light.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/dark.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}' />
+    <link rel="stylesheet" href='{{ "css/syntax-highlight.css" | absURL }}' />
+    <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}' />
+
+
+
+
     <title>{{ if .IsHome }}{{ else }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 
     {{ if .Site.Params.favicon }}
