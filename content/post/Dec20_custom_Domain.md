@@ -1,5 +1,5 @@
 +++
-title = "GitHub Pagesに独自ドメイン設定した"
+title = "GitHub Pagesで作ったサイトに独自ドメイン設定した"
 date = 2021-12-12T12:40:29+09:00
 lastmod = true
 author = "Hayabusa1601"
