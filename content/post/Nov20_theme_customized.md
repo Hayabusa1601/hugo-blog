@@ -62,7 +62,8 @@ Github Actionsの設定をいじくっているときに気づきました、時
 
 ## 変更履歴
 タグの表示とか、簡単にいろいろ変えたところはありますが、これから変更したところを記録していきます。
-
+  
+  ---
 ### フォントの変更
 中華フォントだったので日本語フォントに変更しました。これ→[Koruri](https://koruri.github.io)  
 <br />  
@@ -92,7 +93,11 @@ Github Actionsの設定をいじくっているときに気づきました、時
 
 
 参考:  [WebfontをHUGOのブログに適用する](https://kasu-kasu.ga/post/enable-web-font/)
-   
+
+
+  
+
+
 
 
 
