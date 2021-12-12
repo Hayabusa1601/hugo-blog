@@ -74,14 +74,14 @@ digコマンド使って確認した画面
 {{< figure src="/images/post/Nov20_theme_customized/pages_customdomain.png" >}}
 
 ## デプロイのフローを変更
-私はGitHub Actionsで、GitHub Pagesにデプロイしているので、デプロイ時の操作フローをカスタムドメインに対応させます。  
+私はGitHub Actionsで、GitHub Pagesにデプロイしているので、デプロイ時の操作フローを独自ドメインに対応させます。  
 
   
 デプロイ元にあるフローのファイルに以下のように書き足します。
 
 {{< figure src="/images/post/Nov20_theme_customized/flow_cname.png" >}}
 
-これでデプロイ時にカスタムドメインを参照するようになりました、やったね。  
+これでデプロイ時に独自ドメインを参照するようになりました、やったね。  
 
 ## 参考文献
 #### GitHub公式
