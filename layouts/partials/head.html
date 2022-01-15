@@ -29,4 +29,9 @@
 
     {{- template "_internal/opengraph.html" . -}}
     {{- partial "twitter_cards.html" . -}}
+
+    <!-- Google Analytics setting-->
+    {{- if (eq (getenv "HUGO_ENV") "production") -}}
+      {{ template "_internal/google_analytics.html" . }}
+    {{- end -}}
 </head>
