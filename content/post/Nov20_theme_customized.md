@@ -1,14 +1,12 @@
 +++
 title = "ブログ開設（解説）あれこれ"
 date = 2021-11-20T22:21:55+09:00
-lastmod = true
+lastmod = 2022-03-06T21:43:00+09:00
 author = "Hayabusa1601"
 tags = ["hugo", "html"]
 cover = ""
 summary = "テーマのカスタマイズとか"
 +++
-
-誰が見るねん
 
 ## 目次 <!-- omit in toc -->
 - [このブログについて](#このブログについて)
@@ -35,7 +33,7 @@ Go が勉強できるかな～と軽い気持ちで始めましたが、待っ�
 -  適用しているテーマ 
    -  &emsp;[MeiK2333/github-style](https://github.com/MeiK2333/github-style)  
 
-サンプルページ見れなくなってる……？  
+サンプルページが見れなくなってる……？  
 <br />  
 <br />  
 
@@ -94,10 +92,7 @@ Github Actionsの設定をいじくっているときに気づきました、時
 
 参考:  [WebfontをHUGOのブログに適用する](https://kasu-kasu.ga/post/enable-web-font/)
 
-
   
-
-
 
 
 
