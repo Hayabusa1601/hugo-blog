@@ -74,9 +74,14 @@
                   {{ end }}
                   {{ end }}
 
-                  <div class="mt-1">
-                    Updated at <time datetime="{{ .Lastmod.Format "2006-01-02 15:04" }}" class="no-wrap">
-                        {{ .Lastmod.Format "2006-01-02 15:04" }}</time>
+                  <div class="d-block text-small text-gray">
+                    Created at <time datetime="{{ .PublishDate.Format "2006-01-02 15:04" }}" class="no-wrap">
+                        {{ .PublishDate.Format "2006/01/02 15:04" }}</time>
+                {{ if ne .PublishDate .Lastmod }}
+                    <span class="file-info-divider"></span>
+                    Modified at <time datetime="{{ .Lastmod.Format "2006-01-02 15:04" }}" class="no-wrap">
+                        {{ .Lastmod.Format "2006/01/02 15:04" }}</time>
+                {{ end }}
 
                 </div>
                 </p>

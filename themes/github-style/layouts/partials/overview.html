@@ -83,13 +83,15 @@
     </div>
 
     {{ $section := where .Site.RegularPages "Section" "in" (slice "post") }}
-    <div class="mt-4 position-relative" id="contributions" data='[{{ range $index, $elem := $section }}
+    <div class="mt-4 position-relative" id="contributions" data='{{ range $index, $elem := $section }}
 {
   "title": "{{ .Title }}",
   "link": "{{ .Permalink }}",
   "publishDate": "{{ .PublishDate.Format "2006-01-02 15:04:05" }}"
-}{{ if ne $index (sub (len $section) 1) }},{{ end }}
-{{ end }}]'>
+}
+{{ if ne $index (sub (len $section) 1) }},{{ end }}
+{{ end }}'>
+
       <div class="js-yearly-contributions">
         <div class="position-relative">
           <h2 class="f4 text-normal mb-2" id="posts-count"></h2>
