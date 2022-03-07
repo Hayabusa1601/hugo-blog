@@ -41,17 +41,16 @@
 {{ end }}
 
 <!-- Google Analytics -->
-{{ if eq (getenv "HUGO_ENV") "production"}}
+{{ if not .Site.IsServer }}
 {{ with .Site.GoogleAnalytics }}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MMZYYQQM7P"></script>
 <script>
-  if (navigator.doNotTrack !== '1') {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', '{{ . }}');
-  }
+gtag('config', 'G-MMZYYQQM7P');
 </script>
 {{ end }}
 {{ end }}

@@ -1,8 +1,8 @@
-baseURL = "https://hayabusa1601.github.io/"
+baseURL = "https://blog.hayabusa1601.net/"
 languageCode = "zh-cn"
 title = "ハヤブサの巣窟"
 theme = "github-style"
-googleAnalytics = "G-MMZYYQQM7P"
+googleAnalytics = ""
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
