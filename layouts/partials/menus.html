@@ -29,6 +29,12 @@
               Posts
               <span class="Counter">{{ $section_count}}</span>
             </a>
+            <a class='UnderlineNav-item {{ if hasPrefix .Path "tags" }}selected{{ end }}' href='{{ absURL "tags/" }}'>
+              Tags
+              <span class="Counter hide-lg hide-md hide-sm">
+                  {{ len .Site.Taxonomies.tags }}
+              </span>
+          </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
             <svg width="106" height="60" viewBox="0 0 106 60" fill="none" stroke-width="3" stroke-linecap="round"

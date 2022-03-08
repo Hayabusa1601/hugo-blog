@@ -23,5 +23,11 @@
       Posts
       <span class="Counter ">{{ $section_count}}</span>
     </a>
+    <a class='UnderlineNav-item {{ if hasPrefix .Path "tags" }} selected {{ end }}' href="{{ .Site.BaseURL }}/tags/">
+      Tags
+      <span class="Counter hide-lg hide-md hide-sm">
+          {{ len .Site.Taxonomies.tags }}
+      </span>
+  </a>
   </nav>
 </div>
