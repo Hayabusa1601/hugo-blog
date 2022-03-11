@@ -1,11 +1,10 @@
 baseURL = "https://blog.hayabusa1601.net/"
-languageCode = "zh-cn"
+languageCode = "zh-ja"
 title = "ハヤブサの巣窟"
 theme = "github-style"
 googleAnalytics = ""
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-
 
 [params]
   author = "Hayabusa"
