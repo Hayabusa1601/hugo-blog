@@ -2,7 +2,7 @@ baseURL = "https://blog.hayabusa1601.net/"
 languageCode = "zh-ja"
 title = "ハヤブサの巣窟"
 theme = "github-style"
-googleAnalytics = ""
+googleAnalytics = "G-VLDYHH5Z39"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
