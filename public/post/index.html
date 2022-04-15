@@ -24,7 +24,6 @@
     
     <meta name="theme-color" content="#1e2327">
 
-    
     <meta name="description"
   content="" />
 <meta name="keywords"
@@ -378,7 +377,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">5</span>
+              <span class="Counter">4</span>
             </a>
             <a class='UnderlineNav-item ' href="https://blog.hayabusa1601.net//tags/">
               Tags
@@ -653,7 +652,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">5</span>
+      <span class="Counter ">4</span>
     </a>
     <a class='UnderlineNav-item ' href="https://blog.hayabusa1601.net//tags/">
       Tags
@@ -676,41 +675,26 @@
           <div class="col-12 d-inline-block">
             <div class="d-inline-block mb-1">
               <h3 class="wb-break-all">
-                <a href="https://blog.hayabusa1601.net/post/apr15_latex_memo/"></a>
+                <a href="https://blog.hayabusa1601.net/post/apr15_latex_memo/">【LaTeX】超個人主観で管理されたコピペ用テンプレート</a>
               </h3>
             </div>
 
             <div>
               <div class="col-12 d-inline-block text-gray mb-2 pr-4">
-                はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1.
+                
               </div>
             </div>
 
             <div class="f6 text-gray mt-2">
               
               
-              <a class="muted-link mr-3" href="/tags/">
+              <a class="muted-link mr-3" href="/tags/latex">
                 <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                   <path fill-rule="evenodd"
                     d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                   </path>
                 </svg>
-                
-              </a>
-              
-              <a class="muted-link mr-3" href="/tags/">
-                <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                  <path fill-rule="evenodd"
-                    d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                  </path>
-                </svg>
-                
+                LaTeX
               </a>
               
               
@@ -862,49 +846,6 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
           </div>
         </li>
         
-        <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
-          <div class="col-12 d-inline-block">
-            <div class="d-inline-block mb-1">
-              <h3 class="wb-break-all">
-                <a href="https://blog.hayabusa1601.net/post/test2/">はじめまして</a>
-              </h3>
-            </div>
-
-            <div>
-              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
-                Hello worldする
-              </div>
-            </div>
-
-            <div class="f6 text-gray mt-2">
-              
-              
-              <a class="muted-link mr-3" href="/tags/hello-world">
-                <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                  <path fill-rule="evenodd"
-                    d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                  </path>
-                </svg>
-                Hello world
-              </a>
-              
-              
-              <div class="note m-0">
-                Created <relative-time datetime="Fri, 03 Sep 2021 13:11:46 &#43;0900"
-                  class="no-wrap">
-                  Fri, 03 Sep 2021 13:11:46 &#43;0900</relative-time>
-                
-                  
-                <span class="file-info-divider"></span>
-                Modified <relative-time datetime="Sun, 06 Mar 2022 20:38:00 &#43;0900"
-                  class="no-wrap">
-                  Sun, 06 Mar 2022 20:38:00 &#43;0900</relative-time>
-                
-                </div>
-            </div>
-          </div>
-        </li>
-        
       </ul>
       <div class="paginate-container">
         <div class="BtnGroup">
@@ -940,11 +881,10 @@ window.onscroll = function (e) {
     
 </div>
 
-  <div class="footer container-xl width-full p-responsive">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<div class="footer container-xl width-full p-responsive">
   <div
     class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    
-    
     <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://blog.hayabusa1601.net/">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="32.000000pt" height="32.000000pt" viewBox="0 0 1204.000000 1280.000000"

@@ -17,22 +17,15 @@
 
 
 
-    <title> - ハヤブサの巣窟</title>
+    <title>【LaTeX】超個人主観で管理されたコピペ用テンプレート - ハヤブサの巣窟</title>
 
     
     <link rel="icon" type="image/x-icon" href='images/favicon.png'>
     
     <meta name="theme-color" content="#1e2327">
 
-    
     <meta name="description"
-  content="はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1." />
+  content="" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -40,35 +33,23 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content=" - ハヤブサの巣窟" />
+<meta name="twitter:title" content="【LaTeX】超個人主観で管理されたコピペ用テンプレート - ハヤブサの巣窟" />
 <meta name="twitter:description"
-  content="はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1." />
+  content="" />
 <meta name="twitter:site" content="https://blog.hayabusa1601.net/" />
-<meta name="twitter:creator" content="" />
+<meta name="twitter:creator" content="ハヤブサ" />
 <meta name="twitter:image"
-  content="https://blog.hayabusa1601.net/">
+  content="https://blog.hayabusa1601.net/%E3%80%80">
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content=" - ハヤブサの巣窟">
+<meta property="og:title" content="【LaTeX】超個人主観で管理されたコピペ用テンプレート - ハヤブサの巣窟">
 <meta property="og:description"
-  content="はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1." />
+  content="" />
 <meta property="og:url" content="https://blog.hayabusa1601.net/post/apr15_latex_memo/" />
-<meta property="og:site_name" content="" />
+<meta property="og:site_name" content="【LaTeX】超個人主観で管理されたコピペ用テンプレート" />
 <meta property="og:image"
-  content="https://blog.hayabusa1601.net/">
+  content="https://blog.hayabusa1601.net/%E3%80%80">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
@@ -94,14 +75,8 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
   gtag('config', 'G-VLDYHH5Z39');
 </script>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1." />
+<meta property="og:title" content="【LaTeX】超個人主観で管理されたコピペ用テンプレート" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.hayabusa1601.net/post/apr15_latex_memo/" /><meta property="og:image" content="https://blog.hayabusa1601.net/images/mycon.jpg"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-04-15T21:52:24+09:00" />
@@ -110,14 +85,8 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://blog.hayabusa1601.net/images/mycon.jpg"/>
 
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
-私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
-現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
-Obsidianのメモとしても残せるのMarkdown最高だな～と
-Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
-テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
-プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1."/>
+<meta name="twitter:title" content="【LaTeX】超個人主観で管理されたコピペ用テンプレート"/>
+<meta name="twitter:description" content=""/>
 </head>
 
 <body>
@@ -399,7 +368,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
                   <span class="author">
                     <a href="https://blog.hayabusa1601.net/">Hayabusa</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://blog.hayabusa1601.net/post/apr15_latex_memo/"></a></strong>
+                      href="https://blog.hayabusa1601.net/post/apr15_latex_memo/">【LaTeX】超個人主観で管理されたコピペ用テンプレート</a></strong>
                 </h1>
                 <div class="note m-0">
                   Created <relative-time datetime="Fri, 15 Apr 2022 21:52:24 &#43;0900"
@@ -432,29 +401,20 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          2379 Words
+                          2541 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="/tags/">
+                    <a class="muted-link mr-3" href="/tags/latex">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      
+                      LaTeX
                     </a>
                     
                     
@@ -467,9 +427,74 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
                 <article class="markdown-body entry-content container-lg"><h1 id="はじめに">はじめに</h1>
 <p>こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。</p>
 <p>私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は<del><del>めんどくさいから</del></del>勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。</p>
-<p>現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。</p>
-<p>Obsidianのメモとしても残せるのMarkdown最高だな～と</p>
+<p>現状、テンプレートは私が書いた我が子のようなクソレポとともに、GitHubのPrivateリポジトリで管理しています。GitHubであたらしくPublicリポジトリを作成して、テンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思い、こちらで公開することにしました。私は雰囲気に委ねてTeXを書いているので、アドバイスや改善案等がありましたら、笑顔でTwitterのDMに連絡お願いします。</p>
 <p>Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。</p>
+<h2 id="追記">===追記===</h2>
+<p><strong>ホワイトモードだとなんか文字が白くて見えないので右上のボタンからダークモードにしてください</strong></p>
+<h1 id="目次">目次</h1>
+<ul>
+<li><a href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB">はじめに</a>
+<ul>
+<li><a href="#%E8%BF%BD%E8%A8%98">===追記===</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%AE%E6%AC%A1">目次</a></li>
+<li><a href="#%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88">テンプレート</a>
+<ul>
+<li><a href="#%E3%83%97%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%96%E3%83%AB">プリアンブル</a></li>
+<li><a href="#%E5%9B%B3">図</a>
+<ul>
+<li><a href="#1%E6%9E%9A%E3%81%AE%E3%81%BF">1枚のみ</a></li>
+<li><a href="#%EF%BC%92%E6%9E%9A%E6%A8%AA%E3%81%AB%E4%B8%A6%E3%81%B9%E3%82%8B">２枚横に並べる</a></li>
+</ul>
+</li>
+<li><a href="#%E8%A1%A8">表</a>
+<ul>
+<li><a href="#1%E6%9E%9A%E3%81%AE%E3%81%BF-1">1枚のみ</a></li>
+<li><a href="#2%E6%9E%9A%E6%A8%AA%E3%81%AB%E4%B8%A6%E3%81%B9%E3%82%8B">2枚横に並べる</a></li>
+</ul>
+</li>
+<li><a href="#%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89">ソースコード</a>
+<ul>
+<li><a href="#%E5%A4%96%E9%83%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">外部ファイル</a></li>
+<li><a href="#%E7%9B%B4%E6%9B%B8%E3%81%8D">直書き</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E5%BC%8F">数式</a>
+<ul>
+<li><a href="#%E8%A8%98%E5%8F%B7">記号</a>
+<ul>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+</li>
+<li><a href="#si%E5%8D%98%E4%BD%8D%E7%B3%BB">SI単位系</a>
+<ul>
+<li><a href="#%E3%83%9E%E3%82%AF%E3%83%AD">マクロ</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%A5%E5%8A%9B">入力</a>
+<ul>
+<li><a href="#%E6%B7%BB%E5%AD%97">添字</a></li>
+<li><a href="#%E5%88%86%E6%95%B0">分数</a></li>
+<li><a href="#%E6%A0%B9%E5%8F%B7">根号</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E7%AB%A0%E4%B8%AD%E3%81%AB%E5%85%A5%E5%8A%9B">文章中に入力</a></li>
+</ul>
+</li>
+<li><a href="#url">URL</a></li>
+</ul>
+</li>
+<li><a href="#%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D">箇条書き</a>
+<ul>
+<li><a href="#%E8%A8%98%E5%8F%B7%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D">記号付き箇条書き</a></li>
+<li><a href="#%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D">番号付き箇条書き</a></li>
+<li><a href="#%E8%A6%8B%E5%87%BA%E3%81%97%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D">見出し付き箇条書き</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</a></li>
+<li><a href="#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB">おわりに</a></li>
+</ul>
 <h1 id="テンプレート">テンプレート</h1>
 <p>表はキャプションを上に、図はキャプションを下に記入する。</p>
 <h2 id="プリアンブル">プリアンブル</h2>
@@ -644,47 +669,47 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 </thead>
 <tbody>
 <tr>
-<td>$\alpha$</td>
+<td>$$\alpha$$</td>
 <td>\alpha</td>
 </tr>
 <tr>
-<td>$\beta$</td>
+<td>$$\beta$$</td>
 <td>\beta</td>
 </tr>
 <tr>
-<td>$\epsilon$</td>
+<td>$$\epsilon$$</td>
 <td>\epsilon</td>
 </tr>
 <tr>
-<td>$\lambda$</td>
+<td>$$\lambda$$</td>
 <td>\lambda</td>
 </tr>
 <tr>
-<td>$\sum$</td>
+<td>$$\sum$$</td>
 <td>\sum</td>
 </tr>
 <tr>
-<td>$\times$</td>
+<td>$$\times$$</td>
 <td>\times</td>
 </tr>
 <tr>
-<td>$\simeq$</td>
+<td>$$\simeq$$</td>
 <td>\simeq</td>
 </tr>
 <tr>
-<td>$\infty$</td>
+<td>$$\infty$$</td>
 <td>\infty</td>
 </tr>
 <tr>
-<td>$\int$</td>
+<td>$$\int$$</td>
 <td>\int</td>
 </tr>
 <tr>
-<td>$\ldots$</td>
+<td>$$\ldots$$</td>
 <td>\ldots</td>
 </tr>
 <tr>
-<td>$\cdots$</td>
+<td>$$\cdots$$</td>
 <td>\cdots</td>
 </tr>
 </tbody>
@@ -712,27 +737,27 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 <tr>
 <td>\ampere</td>
 <td>アンペア</td>
-<td>$A$</td>
+<td>$$A$$</td>
 </tr>
 <tr>
 <td>\kelvin</td>
 <td>ケルビン</td>
-<td>$K$</td>
+<td>$$K$$</td>
 </tr>
 <tr>
 <td>\kilogram</td>
 <td>キログラム</td>
-<td>$kg$</td>
+<td>$$kg$$</td>
 </tr>
 <tr>
 <td>\metre</td>
 <td>メートル</td>
-<td>$m$</td>
+<td>$$m$$</td>
 </tr>
 <tr>
 <td>\mole</td>
 <td>モル</td>
-<td>$mol$</td>
+<td>$$mol$$</td>
 </tr>
 <tr>
 <td>\degreeCelsius</td>
@@ -742,12 +767,12 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 <tr>
 <td>\coulomb</td>
 <td>クーロン</td>
-<td>$C$</td>
+<td>$$C$$</td>
 </tr>
 <tr>
 <td>\hertz</td>
 <td>ヘルツ</td>
-<td>$Hz$</td>
+<td>$$Hz$$</td>
 </tr>
 </tbody>
 </table>
@@ -851,7 +876,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
  const tippyInstance = tippy('#toc-toggle', {
   trigger: 'click',
-  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#プリアンブル\u0022\u003eプリアンブル\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#図\u0022\u003e図\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#1枚のみ\u0022\u003e1枚のみ\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#２枚横に並べる\u0022\u003e２枚横に並べる\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#表\u0022\u003e表\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#1枚のみ-1\u0022\u003e1枚のみ\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#2枚横に並べる\u0022\u003e2枚横に並べる\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#ソースコード\u0022\u003eソースコード\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#外部ファイル\u0022\u003e外部ファイル\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#直書き\u0022\u003e直書き\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#数式\u0022\u003e数式\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#記号\u0022\u003e記号\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#si単位系\u0022\u003eSI単位系\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#入力\u0022\u003e入力\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#文章中に入力\u0022\u003e文章中に入力\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#url\u0022\u003eURL\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#記号付き箇条書き\u0022\u003e記号付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#番号付き箇条書き\u0022\u003e番号付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#見出し付き箇条書き\u0022\u003e見出し付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
+  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#追記\u0022\u003e===追記===\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#プリアンブル\u0022\u003eプリアンブル\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#図\u0022\u003e図\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#1枚のみ\u0022\u003e1枚のみ\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#２枚横に並べる\u0022\u003e２枚横に並べる\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#表\u0022\u003e表\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#1枚のみ-1\u0022\u003e1枚のみ\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#2枚横に並べる\u0022\u003e2枚横に並べる\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#ソースコード\u0022\u003eソースコード\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#外部ファイル\u0022\u003e外部ファイル\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#直書き\u0022\u003e直書き\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#数式\u0022\u003e数式\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003ca href=\u0022#記号\u0022\u003e記号\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#si単位系\u0022\u003eSI単位系\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#入力\u0022\u003e入力\u003c\/a\u003e\u003c\/li\u003e\n        \u003cli\u003e\u003ca href=\u0022#文章中に入力\u0022\u003e文章中に入力\u003c\/a\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#url\u0022\u003eURL\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#記号付き箇条書き\u0022\u003e記号付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#番号付き箇条書き\u0022\u003e番号付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#見出し付き箇条書き\u0022\u003e見出し付き箇条書き\u003c\/a\u003e\u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
   allowHTML: true,
   placement: 'bottom-start',
   interactive: true,
@@ -902,11 +927,10 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
 
 
-  <div class="footer container-xl width-full p-responsive">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<div class="footer container-xl width-full p-responsive">
   <div
     class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    
-    
     <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://blog.hayabusa1601.net/">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="32.000000pt" height="32.000000pt" viewBox="0 0 1204.000000 1280.000000"
