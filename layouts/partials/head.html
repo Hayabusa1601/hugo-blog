@@ -25,8 +25,9 @@
     <meta name="theme-color" content="#1e2327">
 
     <!-- Extended head section-->
-    {{ partial "extended_head.html" . }}
-
+    {{- partial "extended_head.html" . -}}
+    {{- partial "add-mathjax-to-page.html" . -}}
+    
     {{- template "_internal/opengraph.html" . -}}
     {{- partial "twitter_cards.html" . -}}
 </head>
