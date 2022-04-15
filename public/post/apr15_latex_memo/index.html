@@ -401,7 +401,7 @@
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          2541 Words
+                          2631 Words
                     
 
                   </div>
@@ -492,6 +492,7 @@
 <li><a href="#%E8%A6%8B%E5%87%BA%E3%81%97%E4%BB%98%E3%81%8D%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D">見出し付き箇条書き</a></li>
 </ul>
 </li>
+<li><a href="#tikz">Tikz</a></li>
 <li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</a></li>
 <li><a href="#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB">おわりに</a></li>
 </ul>
@@ -608,7 +609,7 @@
 
 <span class="k">\hline</span>
 <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
-<span class="k">\caption</span><span class="nb">{</span>J-FETの<span class="s">$</span><span class="nb">V_{DS}</span><span class="o">-</span><span class="nb">I_D</span><span class="s">$</span>特性<span class="nb">}</span>
+<span class="k">\caption</span><span class="nb">{</span> <span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
 </code></pre></div><hr>
 <h3 id="2枚横に並べる">2枚横に並べる</h3>
@@ -776,7 +777,7 @@
 </tr>
 </tbody>
 </table>
-<p><a href="https://medemanabu.net/latex/siunitx-macro/">参考</a></p>
+<p><a href="https://medemanabu.net/latex/siunitx-macro/">参考サイト：SI単位（国際単位系） - siunitxパッケージのマクロ</a></p>
 <h3 id="入力">入力</h3>
 <p>数式の入力はequation内で入力する。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
@@ -789,13 +790,13 @@
 <span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
 </code></pre></div><h4 id="添字">添字</h4>
 <p>わりと直感的に書ける</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="c">%指数=========
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="c">%上付き文字=========
 </span><span class="c"></span> x<span class="nb">^</span>2 
  x<span class="nb">^{</span>2<span class="nb">}</span>
  x<span class="nb">^{</span><span class="k">\prime</span><span class="nb">}</span>
  x<span class="nb">^{</span>2 + i<span class="nb">}</span>
 
-<span class="c">%下===========
+<span class="c">%下付き文字===========
 </span><span class="c"></span> x<span class="nb">_</span>i
  x<span class="nb">_{</span>i<span class="nb">}</span>
  x<span class="nb">_{</span><span class="k">\epsilon</span><span class="nb">}</span>
@@ -806,12 +807,12 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="k">\sqrt</span><span class="nb">{</span>3<span class="nb">}{</span>27<span class="nb">}</span> <span class="c">%\sqrt{n乗根}{数式}
 </span></code></pre></div><h3 id="文章中に入力">文章中に入力</h3>
 <p>$と$で囲えば数式入力できる。</p>
-<p><a href="https://cns-guide.sfc.keio.ac.jp/2001/11/4/1.html#SECTION012411000000000000000">参考</a></p>
+<p><a href="https://cns-guide.sfc.keio.ac.jp/2001/11/4/1.html#SECTION012411000000000000000">LaTeX/LaTeXによる文書整形の応用/数式を記述する</a></p>
 <hr>
 <h2 id="url">URL</h2>
 <p>URLパッケージを使って\url使おう！！！</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tex" data-lang="tex"><span class="k">\url</span><span class="nb">{}</span>　<span class="c">%{}内にURL入力
-</span></code></pre></div><p><a href="https://tm23forest.com/contents/latex-url-paste">参考</a></p>
+</span></code></pre></div><p><a href="https://tm23forest.com/contents/latex-url-paste">LaTeXにURLを貼る時は必ず\url使う</a></p>
 <h1 id="箇条書き">箇条書き</h1>
 <p>箇条書きには3種類ある。</p>
 <h2 id="記号付き箇条書き">記号付き箇条書き</h2>
@@ -840,9 +841,13 @@
   <span class="k">\item</span><span class="na">[第二要素]</span> だいにようそ
   <span class="k">\item</span><span class="na">[第三要素]</span> だいさんようそ
 <span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
-</code></pre></div><p>プリアンブルにある設定をみるとrenercommandとあるが、これは箇条書きルールを自分で定義している。</p>
+</code></pre></div><p>プリアンブルにある設定をみるとrenewcommandの一文があるが、これは箇条書きルールを自分で定義している。</p>
 <p><a href="https://joker.hatenablog.com/entry/20120114/1326488752">enumerate 環境の箇条書きを、括弧付きにしたり英語にしたり</a></p>
 <p><a href="http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php#ITEMIZE">LaTeX 箇条書き</a></p>
+<h1 id="tikz">Tikz</h1>
+<p>ﾜｽﾚﾁｬｯﾀ……！</p>
+<p><a href="https://molina.jp/blog/tikz%E3%81%A6%E3%83%95%E3%83%AD%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E3%82%92%E6%9B%B8%E3%81%8F/">TikZでフローチャートを書く</a></p>
+<p><a href="https://www.overleaf.com/learn/latex/CircuiTikz_package">CircuiTikz package</a></p>
 <h1 id="参考文献">参考文献</h1>
 <p><a href="https://shiba6v.hatenablog.com/entry/2017/10/26/172825">理系大学生のための超手抜きLaTeXレポート入門</a></p>
 <p><a href="https://qiita.com/Ishotihadus/items/bbbb85f54e6a4e7aaac0#disclaimer">イショティハドゥスにキレられないための LaTeX 論文執筆メソッド</a></p>

@@ -42,16 +42,22 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
       - [参考](#参考)
     - [SI単位系](#si単位系)
       - [マクロ](#マクロ)
+      - [参考](#参考-1)
     - [入力](#入力)
       - [添字](#添字)
       - [分数](#分数)
       - [根号](#根号)
     - [文章中に入力](#文章中に入力)
+    - [参考](#参考-2)
   - [URL](#url)
+    - [参考](#参考-3)
 - [箇条書き](#箇条書き)
   - [記号付き箇条書き](#記号付き箇条書き)
   - [番号付き箇条書き](#番号付き箇条書き)
   - [見出し付き箇条書き](#見出し付き箇条書き)
+  - [参考](#参考-4)
+- [Tikz](#tikz)
+  - [参考](#参考-5)
 - [参考文献](#参考文献)
 - [おわりに](#おわりに)
 
@@ -184,7 +190,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
 \hline
 \end{tabular}
-\caption{J-FETの$V_{DS}-I_D$特性}
+\caption{ }
 \end{figure}
 ```
 
@@ -297,7 +303,8 @@ siunitxパッケージを読み込むことで使用できる。
 | \coulomb       | クーロン       | $$C$$   |
 | \hertz         | ヘルツ         | $$Hz$$  |
 
-[参考](https://medemanabu.net/latex/siunitx-macro/)
+#### 参考
+[SI単位（国際単位系） - siunitxパッケージのマクロ](https://medemanabu.net/latex/siunitx-macro/)
 
 
 
@@ -321,13 +328,13 @@ siunitxパッケージを読み込むことで使用できる。
 わりと直感的に書ける
 
 ```tex
-%指数=========
+%上付き文字=========
  x^2 
  x^{2}
  x^{\prime}
  x^{2 + i}
 
-%下===========
+%下付き文字===========
  x_i
  x_{i}
  x_{\epsilon}
@@ -351,7 +358,8 @@ siunitxパッケージを読み込むことで使用できる。
 \$と\$で囲えば数式入力できる。
 
 
-[参考](https://cns-guide.sfc.keio.ac.jp/2001/11/4/1.html#SECTION012411000000000000000)
+### 参考
+[LaTeX/LaTeXによる文書整形の応用/数式を記述する](https://cns-guide.sfc.keio.ac.jp/2001/11/4/1.html#SECTION012411000000000000000)
 
 ---
 ## URL
@@ -361,8 +369,8 @@ URLパッケージを使って\url使おう！！！
 ```tex
 \url{}　%{}内にURL入力
 ```
-
-[参考](https://tm23forest.com/contents/latex-url-paste)
+### 参考
+[LaTeXにURLを貼る時は必ず\url使う](https://tm23forest.com/contents/latex-url-paste)
 
 
 # 箇条書き
@@ -407,11 +415,20 @@ itemize環境で行う。アイテムの記述にはitemを使う。
 \end{description}
 ```
 
-プリアンブルにある設定をみるとrenercommandとあるが、これは箇条書きルールを自分で定義している。
+プリアンブルにある設定をみるとrenewcommandの一文があるが、これは箇条書きルールを自分で定義している。
 
+## 参考
 [enumerate 環境の箇条書きを、括弧付きにしたり英語にしたり](https://joker.hatenablog.com/entry/20120114/1326488752)
 
 [LaTeX 箇条書き](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/item/item.php#ITEMIZE)
+
+# Tikz
+ﾜｽﾚﾁｬｯﾀ……！
+
+## 参考
+[TikZでフローチャートを書く](https://molina.jp/blog/tikz%E3%81%A6%E3%83%95%E3%83%AD%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E3%82%92%E6%9B%B8%E3%81%8F/)
+
+[CircuiTikz package](https://www.overleaf.com/learn/latex/CircuiTikz_package)
 
 
 # 参考文献
