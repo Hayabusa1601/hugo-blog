@@ -6,7 +6,22 @@
     <description>Recent content in Posts on ハヤブサの巣窟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ja</language>
-    <lastBuildDate>Thu, 10 Mar 2022 00:18:01 +0900</lastBuildDate><atom:link href="https://blog.hayabusa1601.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 21:52:24 +0900</lastBuildDate><atom:link href="https://blog.hayabusa1601.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://blog.hayabusa1601.net/post/apr15_latex_memo/</link>
+      <pubDate>Fri, 15 Apr 2022 21:52:24 +0900</pubDate>
+      
+      <guid>https://blog.hayabusa1601.net/post/apr15_latex_memo/</guid>
+      <description>はじめに こんにちは。ハヤブサです。いかがお過ごしでしょうか。私は来週からドキドキ！地獄のレポート生活が始まります。
+私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年はめんどくさいから勉強のためにコマンドを忘れたら逐一調べながら作成していましたが、その作業を行うのはかなり億劫なのでレポートのテンプレートを作成しました。
+現状、テンプレートはGitHubに私が書いたかわいいクソレポとともにPrivateリポジトリにpushしています。GitHubであたらしくPublicリポジトリを作成してテンプレートだけ公開するのもいいかなとは思ったのですが、どうせなら自分の備忘録として遺したいなと思いこちらで公開することにしました。TeXにわかなので、こうしたほうがいいよ、とか、用語が違うよ、とかでも、笑顔でTwitterのDMにお願いします。
+Obsidianのメモとしても残せるのMarkdown最高だな～と
+Cloud LaTeXを使用しているので、環境構築のハナシとかはよくわかりません。
+テンプレート 表はキャプションを上に、図はキャプションを下に記入する。
+プリアンブル \documentclass[a4paper,10pt]{bxjsarticle} \usepackage{xltxtra} \usepackage{zxjatype} \usepackage{here} %数式環境最強 \usepackage{amsmath} \usepackage{amssymb} \usepackage{booktabs} \usepackage{siunitx}%SI記号を使うため \usepackage{bm}%ベクトルを表示するため \usepackage{comment}%複数行のコメントを使用するため  %ここからソースコードの設定==================== \usepackage{listings} % listingを使うため \renewcommand{\lstlistingname}{ソースコード}%キャプション名を「ソースコード」に変更  \lstset{ language={C},%言語の設定  basicstyle={\scriptsize}, frame={tb},%上下にフレーム } %ここまでソースコードの設定====================  %TeXで回路図、フローチャートを書くため \usepackage{tikz} \usepackage{circuitikz} \usetikzlibrary{shapes.geometric} \usetikzlibrary{shapes.misc} \usepackage{pdfpages}%pdfの入力をするため \usepackage{url}%参考文献のurlを入力するため  \setjamainfont[BoldFont=ipaexm.ttf]{ipaexm.ttf} \setjasansfont[BoldFont=ipaexg.ttf]{ipaexg.ttf} \usepackage{subfigure}%図表を横に並べるため  %カウンタの操作をするため \makeatletter \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}} \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}} \makeatother %ここから、段落、箇条書きの番号設定========= %enum環境の一段目に「(1),(2),(3)...」と設定 \renewcommand{\labelenumi}{(\arabic{enumi}).} %subsubsection段落をローマ数字に設定 \renewcommand{\thesubsubsection}{(\roman{subsubsection})} %===========================================  %tikzの設定================================= %端子(両丸の四角形)  \tikzset{Terminal/.style={rounded rectangle, draw, text centered, text width=3cm, minimum height=1.</description>
+    </item>
+    
     <item>
       <title>デレステに5000円突っ込んだ話</title>
       <link>https://blog.hayabusa1601.net/post/mar10_deresute/</link>
