@@ -1,11 +1,11 @@
 +++
-title = "【LaTeX】超個人主観で管理されたコピペ用テンプレート"
+title = "【LaTeX】個人主観で管理されたコピペ用テンプレート"
 date = 2022-04-15T21:52:24+09:00
-lastmod = true
+lastmod = 2022-04-27T18:31:00+09:00
 author = "ハヤブサ"
 tags = ["LaTeX"]
 cover = "　"
-summary = "　"
+summary = "コピペするだけで使えるLaTeX用のテンプレートです。"
 +++
 
 # はじめに
@@ -144,7 +144,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 ```tex
 \begin{figure}[H]
 \centering
-\includegraphics[width=6cm]{}
+\includegraphics[width=8cm]{}
 \caption{}
 \label{}
 \end{figure}
@@ -153,17 +153,17 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
 ### ２枚横に並べる
 ```tex
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\begin{tabular}{cc}
 	\begin{minipage}{.48\textwidth}
 		\centering
-        \includegraphics[width=6cm,height=6cm]{}
+        \includegraphics[width=8cm]{}
         \caption{}
         \label{}
 	\end{minipage}
 		\begin{minipage}{.48\textwidth}
 		\centering
-        \includegraphics[width=6cm,height=6cm]{}
+        \includegraphics[width=8cm]{}
         \caption{}
         \label{}
 	\end{minipage}
@@ -182,7 +182,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 
 \begin{figure}[H]
 \centering
-\begin{tabular}{c|cc|cc|cc}
+\begin{tabular}{ccc}
 \hline
 
 %ここに表を入力
@@ -205,7 +205,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 \begin{minipage}{.45\textwidth}
 \centering
 
-\begin{tabular}{ccc}
+\begin{tabular}{cc}
 
 %ここに表を入力
 
@@ -218,7 +218,7 @@ Cloud LaTeXを使用しているので、環境構築のハナシとかはよく
 \begin{minipage}{.45\textwidth}
 \centering
 
-\begin{tabular}{ccc}
+\begin{tabular}{cc}
 
 %ここに表を入力
 

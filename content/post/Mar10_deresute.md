@@ -1,11 +1,11 @@
 +++
 title = "デレステに5000円突っ込んだ話"
 date = 2022-03-10T00:18:01+09:00
-lastmod = true
+lastmod = 2022-04-28T18:30:00+09:00
 author = "Hayabusa1601"
 tags = ["デレステ"]
 cover = ""
-summary = " "
+summary = "デレステに、神谷奈緒に魅せられて。"
 +++
 
 徒然なるままに、春休み。

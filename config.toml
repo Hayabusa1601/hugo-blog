@@ -20,7 +20,6 @@ pygmentsUseClasses = true
   favicon = "images/favicon.png"
   location = "Japan"
   avator = "/images/avator.png"
-
   images = ["images/mycon.jpg"]
   title = "ハヤブサの巣窟"
 

@@ -1,7 +1,7 @@
 +++
 title = "GitHub Pagesで作ったサイトに独自ドメイン設定した"
 date = 2021-12-12T12:40:29+09:00
-lastmod = true
+lastmod = 2022-04-28T18:31:00+09:00
 author = "Hayabusa1601"
 tags = ["hugo", "DNS"]
 cover = ""
@@ -14,12 +14,12 @@ summary = " "
 - [ドメインのDNS設定を変更する](#ドメインのdns設定を変更する)
 - [独自ドメインをGitHub Pagesに設定](#独自ドメインをgithub-pagesに設定)
 - [デプロイのフローを変更](#デプロイのフローを変更)
+- [追記](#追記)
 - [参考文献](#参考文献)
     - [GitHub公式](#github公式)
     - [記事](#記事)
 
 ## はじめに
-わーい  
 [hayablog.xyz](hayablgo.xyz)  
   
 最初は変更履歴に書いてたんですが、思いの外長くなったので別記事にしました。
@@ -69,7 +69,7 @@ digコマンド使って確認した画面
 .github.ioでおわるリポジトリのSettings→Pagesに移動します。  
   
 「Custom domain」に取得したドメインを入力し、保存します。  
-「Enforce HTTPS」でHTTPS化できます。よく知らないけど有効になるまでちょっと時間かかるらしい。  
+「Enforce HTTPS」でHTTPS化できます。よく知らないけど有効になるまでちょっと時間がかかるらしいです。
   
 {{< figure src="/images/post/Nov20_theme_customized/pages_customdomain.png" >}}
 
@@ -81,7 +81,11 @@ digコマンド使って確認した画面
 
 {{< figure src="/images/post/Nov20_theme_customized/flow_cname.png" >}}
 
-これでデプロイ時に独自ドメインを参照するようになりました、やったね。  
+これでデプロイ時に独自ドメインを参照するようになりました。
+
+## 追記
+
+もともと持っていたhayabusa1601.netのサブドメインに再設定しました。
 
 ## 参考文献
 #### GitHub公式

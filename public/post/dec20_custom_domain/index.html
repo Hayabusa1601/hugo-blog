@@ -19,9 +19,8 @@
 
     <title>GitHub Pagesで作ったサイトに独自ドメイン設定した - ハヤブサの巣窟</title>
 
-    
-    <link rel="icon" type="image/x-icon" href='images/favicon.png'>
-    
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href='https://blog.hayabusa1601.net/images/favicon.png'>
+    <link rel="shortcut icon" href='https://blog.hayabusa1601.net/images/favicon.png'/>
     <meta name="theme-color" content="#1e2327">
 
     <meta name="description"
@@ -80,7 +79,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.hayabusa1601.net/post/dec20_custom_domain/" /><meta property="og:image" content="https://blog.hayabusa1601.net/images/mycon.jpg"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-12-12T12:40:29+09:00" />
-<meta property="article:modified_time" content="2021-12-12T12:40:29+09:00" /><meta property="og:site_name" content="ハヤブサの巣窟" />
+<meta property="article:modified_time" content="2022-04-28T18:31:00+09:00" /><meta property="og:site_name" content="ハヤブサの巣窟" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://blog.hayabusa1601.net/images/mycon.jpg"/>
@@ -376,9 +375,9 @@
                     Sun, 12 Dec 2021 12:40:29 &#43;0900</relative-time>
 
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 12 Dec 2021 12:40:29 &#43;0900"
+                  Modified <relative-time datetime="Thu, 28 Apr 2022 18:31:00 &#43;0900"
                     class="no-wrap">
-                    Sun, 12 Dec 2021 12:40:29 &#43;0900</relative-time>
+                    Thu, 28 Apr 2022 18:31:00 &#43;0900</relative-time>
                 </div>
               </div>
             </div>
@@ -401,7 +400,7 @@
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          998 Words
+                          1038 Words
                     
 
                   </div>
@@ -440,6 +439,7 @@
 <li><a href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AEdns%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B">ドメインのDNS設定を変更する</a></li>
 <li><a href="#%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92github-pages%E3%81%AB%E8%A8%AD%E5%AE%9A">独自ドメインをGitHub Pagesに設定</a></li>
 <li><a href="#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E3%83%95%E3%83%AD%E3%83%BC%E3%82%92%E5%A4%89%E6%9B%B4">デプロイのフローを変更</a></li>
+<li><a href="#%E8%BF%BD%E8%A8%98">追記</a></li>
 <li><a href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</a>
 <ul>
 <li><a href="#github%E5%85%AC%E5%BC%8F">GitHub公式</a></li>
@@ -448,8 +448,7 @@
 </li>
 </ul>
 <h2 id="はじめに">はじめに</h2>
-<p>わーい<br>
-<a href="hayablgo.xyz">hayablog.xyz</a></p>
+<p><a href="hayablgo.xyz">hayablog.xyz</a></p>
 <p>最初は変更履歴に書いてたんですが、思いの外長くなったので別記事にしました。</p>
 <p><a href="onamae.com">お名前.com</a>で取得しました。設定を変更するたびカードの有効性の確認がきてちょっと怖かったです。</p>
 <p>最初はCNAMEレコードだけ設定して、「転送Plus」機能でURLを転送しようとしましたが、どうやら110円かかるそうなのでやめました（金欠）。</p>
@@ -527,7 +526,7 @@
 <h2 id="独自ドメインをgithub-pagesに設定">独自ドメインをGitHub Pagesに設定</h2>
 <p>.github.ioでおわるリポジトリのSettings→Pagesに移動します。</p>
 <p>「Custom domain」に取得したドメインを入力し、保存します。<br>
-「Enforce HTTPS」でHTTPS化できます。よく知らないけど有効になるまでちょっと時間かかるらしい。</p>
+「Enforce HTTPS」でHTTPS化できます。よく知らないけど有効になるまでちょっと時間がかかるらしいです。</p>
 <figure><img src="/images/post/Nov20_theme_customized/pages_customdomain.png"/>
 </figure>
 
@@ -537,7 +536,9 @@
 <figure><img src="/images/post/Nov20_theme_customized/flow_cname.png"/>
 </figure>
 
-<p>これでデプロイ時に独自ドメインを参照するようになりました、やったね。</p>
+<p>これでデプロイ時に独自ドメインを参照するようになりました。</p>
+<h2 id="追記">追記</h2>
+<p>もともと持っていたhayabusa1601.netのサブドメインに再設定しました。</p>
 <h2 id="参考文献">参考文献</h2>
 <h4 id="github公式">GitHub公式</h4>
 <p><a href="https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages">カスタムドメインとGitHub Pages のトラブルシューティング</a><br>
@@ -572,7 +573,7 @@
 
  const tippyInstance = tippy('#toc-toggle', {
   trigger: 'click',
-  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#目次\u0022\u003e目次\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#はじめに\u0022\u003eはじめに\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#ドメインのdns設定を変更する\u0022\u003eドメインのDNS設定を変更する\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#独自ドメインをgithub-pagesに設定\u0022\u003e独自ドメインをGitHub Pagesに設定\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#デプロイのフローを変更\u0022\u003eデプロイのフローを変更\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#参考文献\u0022\u003e参考文献\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
+  content: '<div id="table-of-contents">\u003cnav id=\u0022TableOfContents\u0022\u003e\n  \u003cul\u003e\n    \u003cli\u003e\u003ca href=\u0022#目次\u0022\u003e目次\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#はじめに\u0022\u003eはじめに\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#ドメインのdns設定を変更する\u0022\u003eドメインのDNS設定を変更する\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#独自ドメインをgithub-pagesに設定\u0022\u003e独自ドメインをGitHub Pagesに設定\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#デプロイのフローを変更\u0022\u003eデプロイのフローを変更\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#追記\u0022\u003e追記\u003c\/a\u003e\u003c\/li\u003e\n    \u003cli\u003e\u003ca href=\u0022#参考文献\u0022\u003e参考文献\u003c\/a\u003e\n      \u003cul\u003e\n        \u003cli\u003e\u003c\/li\u003e\n      \u003c\/ul\u003e\n    \u003c\/li\u003e\n  \u003c\/ul\u003e\n\u003c\/nav\u003e</div>',
   allowHTML: true,
   placement: 'bottom-start',
   interactive: true,

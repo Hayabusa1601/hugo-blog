@@ -1,11 +1,11 @@
 +++
 title = "ブログ開設（解説）あれこれ"
 date = 2021-11-20T22:21:55+09:00
-lastmod = 2022-03-06T21:43:00+09:00
+lastmod = 2022-04-28T18:30:00+09:00
 author = "Hayabusa1601"
 tags = ["hugo", "html"]
 cover = ""
-summary = "テーマのカスタマイズとか"
+summary = "hugoテーマのカスタマイズ"
 +++
 
 ## 目次 
