@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ハヤブサの巣窟</title>
+    <title>巣窟</title>
     <link>https://blog.hayabusa1601.net/</link>
-    <description>Recent content on ハヤブサの巣窟</description>
+    <description>Recent content on 巣窟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ja</language>
     <lastBuildDate>Wed, 11 May 2022 00:56:20 +0900</lastBuildDate><atom:link href="https://blog.hayabusa1601.net/index.xml" rel="self" type="application/rss+xml" />
