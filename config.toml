@@ -1,6 +1,6 @@
 baseURL = "https://blog.hayabusa1601.net/"
 languageCode = "zh-ja"
-title = "ハヤブサの巣窟"
+title = "巣窟"
 theme = "github-style"
 lastmod = true
 googleAnalytics = "G-VLDYHH5Z39"
@@ -22,7 +22,7 @@ pygmentsUseClasses = true
   location = "Japan"
   avator = "/images/avator.png"
   images = ["images/mycon.jpg"]
-  title = "ハヤブサの巣窟"
+  title = "巣窟"
 
 
 [frontmatter]
