@@ -30,3 +30,8 @@ pygmentsUseClasses = true
   lastmod = [":git", "lastmod", "date", "publishDate"]
   publishDate = ["publishDate", "date"]
   expiryDate = ["expiryDate"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
