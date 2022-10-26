@@ -1,4 +1,4 @@
-baseURL = "https://blog.hayabusa1601.net/"
+baseURL = "https://hayabusa1601.github.io/"
 languageCode = "zh-ja"
 title = "巣窟"
 theme = "github-style"
