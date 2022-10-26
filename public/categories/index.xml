@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 巣窟</title>
-    <link>https://blog.hayabusa1601.net/categories/</link>
+    <link>https://hayabusa1601.github.io/categories/</link>
     <description>Recent content in Categories on 巣窟</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-ja</language><atom:link href="https://blog.hayabusa1601.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-ja</language><atom:link href="https://hayabusa1601.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
