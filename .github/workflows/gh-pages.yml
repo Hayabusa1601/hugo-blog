@@ -31,4 +31,3 @@ jobs:
           deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
           external_repository: Hayabusa1601/Hayabusa1601.github.io
           publish_branch: main
-          cname: blog.hayabusa1601.net
