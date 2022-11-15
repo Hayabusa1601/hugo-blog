@@ -22,7 +22,7 @@ pygmentsUseClasses = true
   location = "Japan"
   avator = "/images/avator.png"
   images = ["images/mycon.jpg"]
-  title = "そ巣窟"
+  title = "巣窟"
 
 
 [frontmatter]
