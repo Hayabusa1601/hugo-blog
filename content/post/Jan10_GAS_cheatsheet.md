@@ -1,7 +1,7 @@
 +++
 title = "GASの基本"
 date = 2023-01-10T01:39:53+09:00
-lastmod = true
+lastmod = 2023-01-10T22:39:53+09:00
 author = "hayabusa1601"
 tags = ["GAS"]
 cover = ""
@@ -64,8 +64,9 @@ Cでいうところのprintf。実行ログに出力される。
 
 ### 変数宣言
 ```
-var hensu;
-let hensu2;
+var hensu; //var
+let hensu2; //let
+const hensu3 = 'こんにちは' //const
 hensu = 'Hello'!;
 
 hensu2 = 100;
@@ -154,10 +155,10 @@ https://docs.google.com/spreadsheets/d/ファイルid/edit#gid=シートid
 &nbsp;
 
 ### シートを開く
-```gas
+```
  //名前からシートを開く
   const sheet_name = 'シート1'
-  let sheet1 = densan.getSheetByName(sheet_name);
+  let sheet1 = file.getSheetByName(sheet_name);
 ```
 ファイルだけでなくシートを指定する必要がある。ファイルidからgetSheetByName()を使用して名前からシートを開くことができる。シートは下部のバーから追加・変更できる。
 
