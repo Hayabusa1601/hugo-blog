@@ -14,6 +14,7 @@ summaryLength = 120
   description = "about" # 説明
   copyright = "hayabusa1601" # コピーライト
   opengraph = true # enable opengraph
+  images = ["/img/avatar.png"]
   schema = true # enable schema
   twitter_cards = true
   readmore = true # show readmore button
@@ -25,7 +26,6 @@ summaryLength = 120
   dateformat = "2006-01-02" # 日付のフォーマット
   highlightColor = "#6A9057" # ハイライトカラーの変更
   customCSS = ["css/custom.css", "css/notosansjp.css"]
-
 
 # ロゴ設定
 [Params.logo]
