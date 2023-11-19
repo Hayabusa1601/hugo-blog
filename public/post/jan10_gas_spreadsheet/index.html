@@ -53,7 +53,7 @@
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2023-01-10 01:50:29 &#43;0900 &#43;0900" />
+<meta property="article:published_time" content="2023-01-10 01:50:29 &#43;0900 JST" />
 
 
 
@@ -402,7 +402,7 @@
                         <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
                       </svg>
                     </summary>
-                          2947 Words
+                          2943 Words
                     
 
                   </div>
@@ -447,7 +447,7 @@
 <p> </p>
 <h3 id="準備">準備</h3>
 <p>すでに作成されているスプレッドシートで新しいシートを作る、もしくは新しくスプレッドシートのファイルを作成してApps Scriptを作成するか、どちらかを行って新しい関数 checkGrade()を作成する。今後はこの中に処理を記入していこう。</p>
-<pre><code>function checkGrade() {
+<pre tabindex="0"><code>function checkGrade() {
  //ここに記入していく
 }
 </code></pre><p>「実行」「デバッグ」の横にあるmyFunctionを変更して、実行する関数を変更することができる！ここでcheckGrade()を指定しておこう。<br>
@@ -457,11 +457,11 @@
 <p> </p>
 <h3 id="ファイルシートを開く">ファイル・シートを開く</h3>
 <p>まずはファイルを開いてシートを指定しよう</p>
-<pre><code> const ID = 'hogehoge';
+<pre tabindex="0"><code> const ID = &#39;hogehoge&#39;;
  let densan = SpreadsheetApp.openById(ID);
  
  //名前からシートを開く
- const sheet_name = '成績判定';
+ const sheet_name = &#39;成績判定&#39;;
  let sheet2 = densan.getSheetByName(sheet_name);
 </code></pre><p>ファイルidとシート名を間違えないようしよう。ファイルidが一文字でも間違っていれば開けないし、シート名の半角全角は間違いやすい。</p>
 <p> </p>
@@ -473,7 +473,7 @@
 <p> </p>
 <h3 id="結果を判定していく">結果を判定していく</h3>
 <p>このプログラムは、主に一行の実装を、値が入っている最終行までfor文で回すことで結果を埋めることができる。</p>
-<pre><code>let lastrow = sheet2.getLastRow(); //最終行を取得
+<pre tabindex="0"><code>let lastrow = sheet2.getLastRow(); //最終行を取得
 
 //最終行まで回す
 for (let i = 2; i &lt;= lastrow; i++) {
@@ -485,7 +485,7 @@ for (let i = 2; i &lt;= lastrow; i++) {
 <p>2～5列の値を取得して合計することで、合計点数を求めることができるため、for文をネストして2～5列目の値を合計する処理を書く。<br>
 row_scoreを0で定義し、値を読み取るごとにその変数に足していけば合計できる！<br>
 ついでに平均点も計算しておく。</p>
-<pre><code>for (let i = 2; i &lt;= lastrow; i++) {
+<pre tabindex="0"><code>for (let i = 2; i &lt;= lastrow; i++) {
 	let row_score = 0; // 合計点数
 	let average_score;
 
@@ -501,7 +501,7 @@ row_scoreを0で定義し、値を読み取るごとにその変数に足して�
 <p>変数average_scoreが30未満であれば青点、60未満であれば赤点、100未満であれば黒点、それ以外では未入力という条件で設定した。私のシートでは結果は6行目であるから、結果の行をiに列を6にしている。</p>
 <p>ついでにセルの背景の色も変更しておこう。setBackground()でカラーコードを指定することでセルの色を変更することができる。</p>
 <p>以下は全体のコードである。</p>
-<pre><code>for (let i = 2; i &lt;= lastrow; i++) {
+<pre tabindex="0"><code>for (let i = 2; i &lt;= lastrow; i++) {
 	let row_score = 0; // 合計点数
 	let average_score;
 
@@ -512,20 +512,20 @@ row_scoreを0で定義し、値を読み取るごとにその変数に足して�
 	average_score  = row_score / 4;
 
     if (average_score &lt; 30) {
-      sheet2.getRange(i,6).setValue(&quot;青点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#00ffff&quot;);
+      sheet2.getRange(i,6).setValue(&#34;青点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#00ffff&#34;);
 
     } else if (average_score &lt; 60) {
-      sheet2.getRange(i,6).setValue(&quot;赤点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#ff0000&quot;);
+      sheet2.getRange(i,6).setValue(&#34;赤点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#ff0000&#34;);
 
     } else if (average_score &lt;= 100) {
-      sheet2.getRange(i,6).setValue(&quot;黒点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#00ff00&quot;);
+      sheet2.getRange(i,6).setValue(&#34;黒点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#00ff00&#34;);
 
     } else {
-      sheet2.getRange(i,6).setValue(&quot;未入力&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#ffffff&quot;);
+      sheet2.getRange(i,6).setValue(&#34;未入力&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#ffffff&#34;);
 
     }
 }
@@ -534,7 +534,7 @@ row_scoreを0で定義し、値を読み取るごとにその変数に足して�
 <p>とりあえず最低限動作するようになった！　しかし、今回は行に空白がある＝まだ表が完成していない段階でも赤点か否かを判定できるようにしてみる。</p>
 <p>空白があるか否かの判定はisBlank()を使用する。空白が存在する場合、平均点の計算がおかしくなるため、空白の判定のif文の内部で平均点を処理する。今回は空白がみつかる前までの値だけを使って、その時点での平均値を求めている。</p>
 <p>空白が存在しない場合には合計点数に加算して、合計後に平均点を出す。</p>
-<pre><code>for (let i = 2; i &lt;= lastrow; i++) {
+<pre tabindex="0"><code>for (let i = 2; i &lt;= lastrow; i++) {
 	let row_score = 0; // 合計点数
 	let full_flag = true; //空白があるかのフラグ
 	let average_score;
@@ -567,7 +567,7 @@ row_scoreを0で定義し、値を読み取るごとにその変数に足して�
 <p>まずは定数としてBORDER_LINEを240で定義する。</p>
 <p>次に、空白が存在する場合としない場合の処理に、BORDER_LINEとその時点の合計点row_scoreの差next_scoreを計算する。</p>
 <p>その値をシートの7列目に表示させればよい。</p>
-<pre><code>const BORDER_LINE = 240;
+<pre tabindex="0"><code>const BORDER_LINE = 240;
 
 for (let i = 2; i &lt;= lastrow; i++) {
 	let row_score = 0 // 合計点数
@@ -626,13 +626,13 @@ for (let i = 2; i &lt;= lastrow; i++) {
 
 <p> </p>
 <h3 id="完成したコード">完成したコード</h3>
-<pre><code>function checkGrade() {
+<pre tabindex="0"><code>function checkGrade() {
   const BORDER_LINE = 240;
-  const ID = 'hogehoge';
+  const ID = &#39;hogehoge&#39;;
   let densan = SpreadsheetApp.openById(ID);
 
   //名前からシートを開く
-  const sheet_name = '成績判定';
+  const sheet_name = &#39;成績判定&#39;;
   let sheet2 = densan.getSheetByName(sheet_name);
 
   //値の入っている最終行を取得
@@ -675,24 +675,24 @@ for (let i = 2; i &lt;= lastrow; i++) {
 
     }
 
-    Logger.log(&quot;合計点数は&quot; + row_score);
-    Logger.log(&quot;平均点は&quot; + average_score);
+    Logger.log(&#34;合計点数は&#34; + row_score);
+    Logger.log(&#34;平均点は&#34; + average_score);
 
     if (average_score &lt; 30) {
-      sheet2.getRange(i,6).setValue(&quot;青点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#00ffff&quot;);
+      sheet2.getRange(i,6).setValue(&#34;青点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#00ffff&#34;);
 
     } else if (average_score &lt; 60) {
-      sheet2.getRange(i,6).setValue(&quot;赤点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#ff0000&quot;);
+      sheet2.getRange(i,6).setValue(&#34;赤点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#ff0000&#34;);
 
     } else if (average_score &lt;= 100) {
-      sheet2.getRange(i,6).setValue(&quot;黒点！&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#00ff00&quot;);
+      sheet2.getRange(i,6).setValue(&#34;黒点！&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#00ff00&#34;);
 
     } else {
-      sheet2.getRange(i,6).setValue(&quot;未入力&quot;);
-      sheet2.getRange(i,6).setBackground(&quot;#ffffff&quot;);
+      sheet2.getRange(i,6).setValue(&#34;未入力&#34;);
+      sheet2.getRange(i,6).setBackground(&#34;#ffffff&#34;);
 
     }
 
