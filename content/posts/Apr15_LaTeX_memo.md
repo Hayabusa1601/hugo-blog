@@ -3,7 +3,7 @@ title = '【LaTeX】個人主観で管理されたコピペ用テンプレート
 date = 2022-04-15T21:52:24+09:00
 categories = ["LaTeX"]
 tags = ["LaTeX"]
-draft = true
+draft = false
 
 #thumbnail = "img/placeholder.png" # サムネ
 #lead = "Example lead" # ハイライトされたタイトルの近くのテキスト
