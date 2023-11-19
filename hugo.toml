@@ -1,6 +1,6 @@
 baseURL = 'https://hayabusa1601.github.io/'
 languageCode = 'ja'
-title = 'My New Hugo Site'
+title = 'h4yroom'
 theme = 'mainroad'
 hasCJKLanguage = true
 summaryLength = 120

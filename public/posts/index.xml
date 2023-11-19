@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>h4yroom</title>
-    <link>https://hayabusa1601.github.io/</link>
-    <description>Recent content on h4yroom</description>
+    <title>Posts on h4yroom</title>
+    <link>https://hayabusa1601.github.io/posts/</link>
+    <description>Recent content in Posts on h4yroom</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 07 Feb 2023 12:48:10 +0900</lastBuildDate>
-    <atom:link href="https://hayabusa1601.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hayabusa1601.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>去年の振り返りと今年の抱負</title>
       <link>https://hayabusa1601.github.io/posts/feb7_2022to2023/</link>
@@ -35,13 +35,6 @@
       <pubDate>Fri, 15 Apr 2022 21:52:24 +0900</pubDate>
       <guid>https://hayabusa1601.github.io/posts/apr15_latex_memo/</guid>
       <description>はじめに こんにちは、ハヤブサです。いかがお過ごしでしょうか。私は来週から地獄のレポート生活が始まります。 私は昨年からCloud LaTeXを使用しTeXでレポートを書いています。昨年は面倒くさいから勉強のためにコマンドを忘れたら逐一調べながら</description>
-    </item>
-    <item>
-      <title>プライバシーポリシー</title>
-      <link>https://hayabusa1601.github.io/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hayabusa1601.github.io/privacy/</guid>
-      <description>このサイトでは利用状況を分析するために Google アナリティクス を使用しています。 Google アナリティクスはCookieを使用してこのサイトへのアクセス情報を Google に送信しています。 Google アナリティクスでデータが収集、処理される仕組みについては「Google のサービ</description>
     </item>
   </channel>
 </rss>
