@@ -1,0 +1,85 @@
+baseURL = 'https://hayabusa1601.github.io/'
+languageCode = 'ja'
+title = 'My New Hugo Site'
+theme = 'mainroad'
+hasCJKLanguage = true
+summaryLength = 120
+
+[Author]
+  name = "hayabusa1601"
+  bio = "hello!"
+  avatar = "img/avatar.png"
+
+[Params]
+  description = "about" # 説明
+  copyright = "hayabusa1601" # コピーライト
+  opengraph = true # enable opengraph
+  schema = true # enable schema
+  twitter_cards = true
+  readmore = true # show readmore button
+  authorbox = true # show authorbox at bottom of pages if true
+  toc = true # table of contents
+  pager = true # show pager navigation at the bottom of pages
+  post_meta = ["date", "categories"] # 投稿のメタデータを指定
+  mainSections = ["posts"]
+  dateformat = "2006-01-02" # 日付のフォーマット
+  highlightColor = "#6A9057" # ハイライトカラーの変更
+  customCSS = ["css/custom.css", "css/notosansjp.css"]
+
+
+# ロゴ設定
+[Params.logo]
+  #image = ""
+  title = "ハblog"
+  subtitle = "h4yroom"
+
+# サイドバー設定
+[Params.sidebar]
+  home="right"
+  list = "right"
+  single = false
+  
+  # ウィジェットをならべる
+  widgets = ["search", "recent", "categories", "taglist", "social", "twitter"]
+
+# メニューのカスタム
+[[Menus.main]]
+    Name = "ホーム"
+    URL = "/"
+
+[[Menus.main]]
+    Name = "記事"
+    URL = "/posts/"
+
+[[Menus.footer]]
+    Name = "Privacy policy"
+    URL = "/privacy/"
+
+# かすたむうぃじぇっと
+[Params.widgets]
+  recent_num = 6
+  categories_counter = false
+  tags_counter = false
+
+[Params.widget.social]
+  cached = true
+  twitter = "hayabusa1601"
+  github = "Hayabusa1601"
+
+
+[[Params.widgets.social.custom]]
+    title = "X"
+    url = "https://twitter.com/hayabusa1601"
+    icon = "svg/twitter.svg"
+
+[[Params.widgets.social.custom]]
+    title = "Github"
+    url = "https://github.com/Hayabusa1601"
+    icon = "svg/github.svg"
+
+[Params.widgets.search]
+    cached = false
+    url = "https://google.com/search"
+    [Params.widgets.search.input]
+        name = "sitesearch"
+        pre = ""
