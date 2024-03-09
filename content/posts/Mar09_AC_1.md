@@ -1,8 +1,8 @@
 +++
 title = 'レバーレスコントローラを自作する'
 date = 2024-03-09T14:41:04+09:00
-categories = []
-tags = []
+categories = ["雑記"]
+tags = ["スト6", "アケコン自作", "DIY", "レバーレス"]
 draft = false
 thumbnail = "img/posts/Mar09_AC_1/controller.jpg" # サムネ
 lead = "静音性・安さ・小指インパクト" # ハイライトされたタイトルの近くのテキスト
