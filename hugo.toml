@@ -7,7 +7,7 @@ summaryLength = 120
 
 [Author]
   name = "hayabusa1601"
-  bio = "hello!"
+  bio = "趣味に生きる"
   avatar = "img/avatar.png"
 
 [Params]
@@ -37,10 +37,10 @@ summaryLength = 120
 [Params.sidebar]
   home="right"
   list = "right"
-  single = false
+  single = "right"
   
   # ウィジェットをならべる
-  widgets = ["search", "recent", "categories", "taglist", "social", "twitter"]
+  widgets = ["search", "social", "recent", "categories", "taglist", "twitter"]
 
 # メニューのカスタム
 [[Menus.main]]
